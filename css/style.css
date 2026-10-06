@@ -1,4 +1,3 @@
-
 :root {
     --rojo: #d91e26;
     --rojo-oscuro: #7d0d14;
@@ -72,18 +71,20 @@ textarea:focus-visible {
     background: var(--blanco);
 }
 
+/* Estilo para el botón de Parqueadero 24/7 (Negro y Amarillo Oscuro) */
 .btn-parqueadero {
     background-color: #000000;
-    color: #eb660d !important;
+    color: #b8860b !important;
     padding: 6px 14px;
     border-radius: 999px;
     font-weight: 600;
+    text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-parqueadero:hover {
-    background-color: #3f3f3f !important;
-    color: #eb660d !important;
+.nav-links a.btn-parqueadero:hover {
+    background-color: #1a1a1a !important;
+    color: #f39c12 !important;
 }
 
 /* ---------- Navbar ---------- */
@@ -101,12 +102,18 @@ textarea:focus-visible {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
     font-size: 1.8rem;
     font-weight: 800;
     color: var(--rojo);
+}
+
+/* Estilo para que el enlace dentro del logo no altere el formato */
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: inherit;
+    text-decoration: none;
 }
 
 /* El "46" como una etiqueta redonda */
@@ -125,6 +132,7 @@ textarea:focus-visible {
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 0.3rem;
     margin: 0;
     padding: 0;

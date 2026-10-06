@@ -1,14 +1,4 @@
-/* =====================================================
-   Minimercado La 46 · rojo (principal), amarillo claro y blanco
-   Solo CSS3. Idea: una tienda de barrio con su toldo a rayas
-   y etiquetas de precio.
-   Orden: base > navbar > inicio > productos > domicilios >
-          contáctanos > footer > responsive
-   ===================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap");
-
-/* ---------- Base ---------- */
 :root {
     --rojo: #d91e26;
     --rojo-oscuro: #7d0d14;
@@ -80,6 +70,19 @@ textarea:focus-visible {
 .btn-secondary:hover {
     color: var(--rojo);
     background: var(--blanco);
+}
+
+.btn-parqueadero {
+    background-color: transparent;
+    color: inherit;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-parqueadero:hover {
+    background-color: black;
+    color: #B8860B !important;
 }
 
 /* ---------- Navbar ---------- */
